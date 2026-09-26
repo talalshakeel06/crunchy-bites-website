@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded product photos get stored / served from
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "products"
+    label: "Menu"
+    files:
+      - file: "content/products.json"
+        name: "products"
+        label: "Products"
+        description: "Everything shown on the Order/Menu page. Add, edit, reorder or delete items here — changes go live once published."
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.tag}}"
+            fields:
+              - { label: "ID (unique, no spaces, lowercase)", name: "id", widget: "string", hint: "Used internally to track cart items — never reuse an ID for a different product." }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Badge (optional, e.g. Bestseller, Signature)", name: "tag", widget: "string", required: false }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Photo", name: "img", widget: "image" }
+              - label: "Sizes"
+                name: "sizes"
+                widget: "list"
+                summary: "{{fields.label}} — Rs. {{fields.price}}"
+                fields:
+                  - { label: "Size Label (e.g. 12 pc, 1 lb)", name: "label", widget: "string" }
+                  - { label: "Price (PKR)", name: "price", widget: "number", value_type: "int" }
+              - label: "Toppings (optional — leave empty if this product has none)"
+                name: "toppings"
+                widget: "list"
+                required: false
+                summary: "{{fields.label}} — +Rs. {{fields.price}}"
+                fields:
+                  - { label: "Topping Label", name: "label", widget: "string" }
+                  - { label: "Extra Price (PKR, use 0 for the default/no-topping option)", name: "price", widget: "number", value_type: "int" }

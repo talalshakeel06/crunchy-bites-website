@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "id": "brownies",
+      "name": "Brownies",
+      "tag": "Bestseller",
+      "desc": "Dense, fudgy, cut thick — pick a size and a topping.",
+      "img": "https://images.pexels.com/photos/2373520/pexels-photo-2373520.jpeg?auto=compress&cs=tinysrgb&w=500",
+      "sizes": [
+        { "label": "9 pc", "price": 1200 },
+        { "label": "12 pc", "price": 1500 },
+        { "label": "16 pc", "price": 1900 },
+        { "label": "20 pc", "price": 2300 },
+        { "label": "24 pc", "price": 2700 }
+      ],
+      "toppings": [
+        { "label": "No Topping", "price": 0 },
+        { "label": "Nutella", "price": 150 },
+        { "label": "Lotus", "price": 150 },
+        { "label": "Oreo", "price": 120 },
+        { "label": "Dairy Milk", "price": 130 }
+      ]
+    },
+    {
+      "id": "cakes",
+      "name": "Cakes",
+      "tag": "",
+      "desc": "Layered, frosted and finished to order for any celebration.",
+      "img": "https://images.pexels.com/photos/17289681/pexels-photo-17289681.jpeg?auto=compress&cs=tinysrgb&w=500",
+      "sizes": [
+        { "label": "1 lb", "price": 1800 },
+        { "label": "2 lb", "price": 3200 },
+        { "label": "3 lb", "price": 4500 }
+      ],
+      "toppings": []
+    },
+    {
+      "id": "tresleches",
+      "name": "Tres Leches",
+      "tag": "Signature",
+      "desc": "Soaked slow in three milks, finished with cream. Our most-requested slice.",
+      "img": "https://images.pexels.com/photos/22674098/pexels-photo-22674098.jpeg?auto=compress&cs=tinysrgb&w=500",
+      "sizes": [
+        { "label": "1 lb", "price": 2000 },
+        { "label": "2 lb", "price": 3600 }
+      ],
+      "toppings": []
+    },
+    {
+      "id": "more",
+      "name": "Cupcakes & More",
+      "tag": "",
+      "desc": "Cupcakes and dessert jars — ask what is on today's specials list.",
+      "img": "https://images.pexels.com/photos/3592423/pexels-photo-3592423.jpeg?auto=compress&cs=tinysrgb&w=500",
+      "sizes": [
+        { "label": "Box of 6", "price": 1400 },
+        { "label": "Box of 12", "price": 2600 }
+      ],
+      "toppings": []
+    }
+  ]
+}

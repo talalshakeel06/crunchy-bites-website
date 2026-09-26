@@ -3,26 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crunchy Bites — Home Made Desserts | Karachi</title>
-<meta name="description" content="Crunchy Bites bakes home made brownies, cakes, tres leches & more in Karachi. Order online, checkout on WhatsApp.">
-<link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+<title id="pageTitle">Product — Crunchy Bites | Karachi</title>
+<meta name="description" id="pageDescription" content="Order home made desserts from Crunchy Bites, Karachi.">
+<link rel="icon" href="../assets/logo.jpg" type="image/jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
 
 <header id="siteHeader">
   <div class="wrap">
     <nav>
-      <a href="index.html" class="logo"><img id="siteLogoImg" src="assets/logo.jpg" alt="Crunchy Bites logo" class="logo-img"><span id="siteBusinessName">Crunchy Bites</span></a>
+      <a href="../index.html" class="logo"><img id="siteLogoImg" src="../assets/logo.jpg" alt="Crunchy Bites logo" class="logo-img"><span id="siteBusinessName">Crunchy Bites</span></a>
       <div class="nav-links" id="navLinks">
-        <a href="index.html" class="active">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">About</a>
-        <a href="occasions.html">Occasions</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="../index.html">Home</a>
+        <a href="../menu.html" class="active">Menu</a>
+        <a href="../about.html">About</a>
+        <a href="../occasions.html">Occasions</a>
+        <a href="../gallery.html">Gallery</a>
       </div>
       <div class="nav-right">
         <button class="cart-btn" id="cartOpenBtn" aria-label="Open cart">
@@ -37,90 +37,19 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow" id="heroEyebrow">Home Bakery · Karachi</span>
-      <h1>
-        <span id="heroHeadingText">Desserts made from scratch,</span><br>
-        <span class="sig script" id="heroSignature">by Mariam ✦</span>
-      </h1>
-      <p class="lead" id="heroLead">Fudgy brownies, layered cakes and tres leches — baked to order in small batches. Pick a size, add to cart, and check out straight to WhatsApp.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="menu.html" id="heroPrimaryCta">Start an Order</a>
-        <a class="btn btn-ghost" href="https://wa.me/923218736373" target="_blank" rel="noopener" id="heroSecondaryCta">Ask a Question</a>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="hero-photo hp1">
-        <img id="heroImg1" src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Stack of fudgy chocolate brownies drizzled with syrup">
-      </div>
-      <div class="hero-photo hp2">
-        <img id="heroImg2" src="https://images.pexels.com/photos/32191352/pexels-photo-32191352.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Slice of pink layered cake with lemon garnish">
-      </div>
-      <svg class="doodle-circle" style="position:absolute; top:-6%; right:-4%; width:70%; height:70%; z-index:5;" viewBox="0 0 200 160">
-        <path d="M20,90 C10,40 60,10 110,15 C165,20 195,60 180,100 C165,140 100,155 60,140 C25,127 15,110 20,90 Z"/>
-      </svg>
-      <div class="seal">
-        <svg viewBox="0 0 120 120">
-          <circle cx="60" cy="60" r="52" fill="var(--cream)" stroke="var(--cocoa)" stroke-width="2"/>
-          <circle cx="60" cy="60" r="44" fill="none" stroke="var(--berry)" stroke-width="1.4" stroke-dasharray="2 4"/>
-          <g class="seal-text">
-            <path id="circlePath" d="M 60,60 m -33,0 a 33,33 0 1,1 66,0 a 33,33 0 1,1 -66,0" fill="none"/>
-            <text font-family="Space Mono, monospace" font-size="7.2" letter-spacing="2" fill="var(--cocoa)">
-              <textPath href="#circlePath">HOME MADE · KARACHI · SINCE DAY ONE ·</textPath>
-            </text>
-          </g>
-          <text x="60" y="65" text-anchor="middle" font-family="Fraunces, serif" font-weight="700" font-size="15" fill="var(--berry)">CB</text>
-        </svg>
-      </div>
-    </div>
+<!-- PRODUCT DETAIL (populated by product.js based on the URL slug) -->
+<section class="page-hero" style="padding-bottom:20px;">
+  <div class="wrap">
+    <div class="product-crumb"><a href="../menu.html">Menu</a> <span>／</span> <span id="productCrumbName">Product</span></div>
   </div>
 </section>
 
-<!-- TICKER -->
-<div class="ticker">
-  <div class="ticker-track" id="tickerTrack">
-    <span>Brownies</span><span>Layered Cakes</span><span>Tres Leches</span><span>Cupcakes</span><span>Birth Announcements</span><span>Corporate Gifting</span>
-    <span>Brownies</span><span>Layered Cakes</span><span>Tres Leches</span><span>Cupcakes</span><span>Birth Announcements</span><span>Corporate Gifting</span>
-  </div>
-</div>
-
-<!-- OCCASIONS (brief) -->
-<section class="occasions" id="occasions">
+<section style="padding-top:0;">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow reveal" id="occasionsEyebrow">Made For The Moment</span>
-      <h2 class="reveal d1" id="occasionsHeading">Baked around your occasion, not the other way round.</h2>
-      <p class="reveal d2" id="occasionsSubtext">Birth announcements, events and corporate gifting — see how we tailor each order.</p>
+    <div id="productContent">
+      <!-- Loading / not-found / detail markup injected here by product.js -->
+      <p style="color:var(--cocoa-soft);">Loading…</p>
     </div>
-    <div class="occ-block">
-      <div class="occ-img reveal"><img id="occasionImg" src="https://images.pexels.com/photos/1857157/pexels-photo-1857157.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cakes styled on a table for a celebration"></div>
-      <div class="occ-text reveal d1">
-        <span class="occ-num">01</span>
-        <h3 id="occasionTitle">Birth Announcements</h3>
-        <p id="occasionText">Soft pastel boxes and personalised toppers to share the news, sized for close family or the whole guest list.</p>
-        <div style="margin-top:22px;"><a class="btn btn-primary" href="occasions.html">See All Occasions →</a></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW TO ORDER -->
-<section id="order">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow reveal">How It Works</span>
-      <h2 class="reveal d1">Three steps, no forms.</h2>
-    </div>
-    <div class="steps" id="orderSteps">
-      <div class="step reveal"><div class="step-num">01</div><h3>Build your cart</h3><p>Choose sizes, toppings and quantities from the menu page — the cart keeps a running total.</p></div>
-      <div class="step reveal d1"><div class="step-num">02</div><h3>Checkout on WhatsApp</h3><p>Tap checkout and your order summary opens in WhatsApp, ready to send to us.</p></div>
-      <div class="step reveal d2"><div class="step-num">03</div><h3>Confirm & collect</h3><p>We confirm the price, date, and pickup or delivery — then get baking.</p></div>
-    </div>
-    <div class="gallery-cta reveal"><a class="btn btn-primary" href="menu.html">Browse the Menu →</a></div>
   </div>
 </section>
 
@@ -129,7 +58,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="brand"><img id="footerLogoImg" src="assets/logo.jpg" alt="Crunchy Bites logo" class="footer-logo"><span id="footerBusinessName">Crunchy Bites</span></div>
+        <div class="brand"><img id="footerLogoImg" src="../assets/logo.jpg" alt="Crunchy Bites logo" class="footer-logo"><span id="footerBusinessName">Crunchy Bites</span></div>
         <p class="foot-note" id="footerNote">Home made desserts, baked to order in Karachi. Perfect for birth announcements, events and corporate gifting.</p>
       </div>
       <div>
@@ -170,18 +99,7 @@
   </div>
 </aside>
 
-<script src="assets/common.js"></script>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+<script src="../assets/common.js"></script>
+<script src="product.js"></script>
 </body>
 </html>
